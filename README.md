@@ -31,17 +31,17 @@ $$
 ### Conservation of momentum
 
 $$
-	\underbrace{\frac{\partial q_x}{\partial t}}_{\substack{\text{local} \\\text{acceleration}}} 
-	+ \underbrace{\frac{\partial}{\partial x}\left(uq_x\right) + \frac{\partial}{\partial y}\left(vq_x\right)}_{\substack{\text{convective} \\\text{acceleration}}} 
-	+ \underbrace{gh\frac{\partial \left(h+z\right)}{\partial x}}_{\substack{\text{pressure $+$} \\\text{bed gradients}}}
-	+ \underbrace{ghS_{f_x}}_{\text{friction}} = 0
+	\underbrace{\frac{\partial q\_x}{\partial t}}\_{\substack{\text{local} \\\text{acceleration}}} 
+	+ \underbrace{\frac{\partial}{\partial x}\left(uq\_x\right) + \frac{\partial}{\partial y}\left(vq\_x\right)}\_{\substack{\text{convective} \\\text{acceleration}}} 
+	+ \underbrace{gh\frac{\partial \left(h+z\right)}{\partial x}}\_{\substack{\text{pressure $+$} \\\text{bed gradients}}}
+	+ \underbrace{ghS\_{f\_x}}\_{\text{friction}} = 0
 $$
 
 $$
-	\underbrace{\frac{\partial q_y}{\partial t}}_{\substack{\text{local} \\\text{acceleration}}} 
-	+ \underbrace{\frac{\partial}{\partial y}\left(vq_y\right) + \frac{\partial}{\partial x}\left(uq_y\right)}_{\substack{\text{convective} \\\text{acceleration}}} 
-	+ \underbrace{gh\frac{\partial \left(h+z\right)}{\partial y}}_{\substack{\text{pressure $+$} \\\text{bed gradients}}}
-	+ \underbrace{ghS_{f_y}}_{\text{friction}} = 0
+	\underbrace{\frac{\partial q\_y}{\partial t}}\_{\substack{\text{local} \\\text{acceleration}}} 
+	+ \underbrace{\frac{\partial}{\partial y}\left(vq\_y\right) + \frac{\partial}{\partial x}\left(uq\_y\right)}\_{\substack{\text{convective} \\\text{acceleration}}} 
+	+ \underbrace{gh\frac{\partial \left(h+z\right)}{\partial y}}\_{\substack{\text{pressure $+$} \\\text{bed gradients}}}
+	+ \underbrace{ghS\_{f\_y}}\_{\text{friction}} = 0
 $$
 
 in de Almeda et.al., (2012), friction slope ($S_f$) is approximated using the Manning-Strickler equation and assuming wide shallow cross-sectional area normal flow (i.e., $R\approx h$), where:
@@ -84,7 +84,7 @@ $$
 after updating fluxes for time step $n+1$, cell heads are updated by:
 
 $$
-	\eta^{n+1}_{i,j} = \eta^n_{i,j} + \frac{\Delta t}{\Delta x}\left(q_x|^{n+1}_{i-1/2,j}-q_x|^{n+1}_{i+1/2,j}+q_y|^{n+1}_{i,j-1/2}-q_y|^{n+1}_{i,j+1/2}\right)
+	\eta^{n+1}\_{i,j} = \eta^n\_{i,j} + \frac{\Delta t}{\Delta x}\left(q\_x|^{n+1}\_{i-1/2,j}-q\_x|^{n+1}\_{i+1/2,j}+q\_y|^{n+1}\_{i,j-1/2}-q\_y|^{n+1}\_{i,j+1/2}\right)
 $$
 
 

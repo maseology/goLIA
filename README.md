@@ -8,7 +8,7 @@ A Go implementation of the explicit finite-difference solution of de Almeda et.a
 $$
 	\frac{\partial q_x}{\partial t} 
 	+ gh\frac{\partial \left(h+z\right)}{\partial x}
-	+ ghS_{f_x} = 0
+	+ ghS_{f_x} = \Delta
 $$
 
 <br>

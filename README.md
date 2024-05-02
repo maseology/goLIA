@@ -69,7 +69,7 @@ $$
 $$
 
 $$
-	q^{n+1}_{i-1/2} = 1
+	q^{n+1}_{i-1/2} = \theta q^n_{i-1/2}+\frac{1-\theta}{2}\left(q^n_{i-3/2}+q^n_{i+1/2}\right) - gh^n_f \frac{\Delta t}{\Delta x}\left(\eta^n_i - \eta^n_{i-1}\right)
 $$
 
 where

@@ -65,11 +65,7 @@ $$
 ## Numerical Scheme
 
 $$
-	q^{n+1}_{i-1/2} = \frac{\theta q^n_{i-1/2}+\frac{1-\theta}{2}\left(q^n_{i-3/2}+q^n_{i+1/2}\right) - gh^n_f \frac{\Delta t}{\Delta x}\left(\eta^n_i - \eta^n_{i-1}\right)}{1 + g \Delta t n^2 ||\vec{q}^n_{i-1/2}||/h^{7/3}_{f}}
-$$
-
-$$
-	q^{n+1}\_{i-1/2} = q^{n+1}\_{i-1/2}
+	q^{n+1}\_{i-1/2} = \frac{\theta q^n\_{i-1/2}+\frac{1-\theta}{2}\left(q^n\_{i-3/2}+q^n\_{i+1/2}\right) - gh^n\_f \frac{\Delta t}{\Delta x}\left(\eta^n\_i - \eta^n\_{i-1}\right)}{1 + g \Delta t n^2 ||\vec{q}^n\_{i-1/2}||/h^{7/3}\_{f}}
 $$
 
 where
